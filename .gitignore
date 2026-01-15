@@ -1,0 +1,11 @@
+
+
+
+# Opencode installation
+bun.lock
+node_modules
+package.json
+
+# Mac specific
+.DS_Store
+

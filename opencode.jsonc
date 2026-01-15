@@ -1,0 +1,67 @@
+{
+  "$schema": "https://opencode.ai/config",
+  "autoupdate": true,
+  //"model": null,                       // Primary AI model to use (default: null)
+  //"small_model": null,                 // Secondary model for lightweight tasks (default: null),
+  "tui": {
+    "scroll_acceleration": {
+      "enabled": false
+    },
+    "scroll_speed": 1,
+    "diff_style": "auto"
+  }, // end tui
+
+  /*
+  // Server configuration for opencode serve and opencode web commands
+  "server": {
+    "port": 4096, // Port to listen on for the OpenCode server (default: 4096)
+    "hostname": null, // Hostname to bind to (defaults to "0.0.0.0" when mdns is enabled) (default: null)
+    "mdns": true, // Enable mDNS service discovery for other devices on the network (default: true)
+    "cors": [] // Additional origins to allow for CORS when using browser-based clients (default: [])
+  }, // end server
+  */
+
+  // Tools configuration - control which operations are available
+  "tools": {
+    "write": true,      // Allow file writing operations (default: true)
+    "bash": true,       // Allow bash command execution (default: true)
+    "read": true,       // Allow file reading operations (default: true)
+    "edit": true,       // Allow file editing operations (default: true)
+    "glob": true,       // Allow file pattern matching (default: true)
+    "grep": true,       // Allow content searching (default: true)
+    "webfetch": true,   // Allow web content fetching (default: true)
+    "websearch": true,  // Allow web searching (default: true)
+    "codesearch": true, // Allow code documentation search (default: true)
+    "task": true,       // Allow agent task delegation (default: true)
+    "todowrite": true,  // Allow todo list creation (default: true)
+    "todoread": true,   // Allow todo list reading (default: true)
+    "question": true,   // Allow user questioning (default: true)
+    "skill": true       // Allow skill loading (default: true)
+  }, // end tools
+
+  // Provider configuration options for AI model providers
+  "provider": {
+    /*"anthropic": {
+      "options": {
+        "timeout": 300000,              // Request timeout in milliseconds (default: 300000)
+        "setCacheKey": false            // Ensure cache key is always set (default: false)
+      }
+    },*/
+    /*"openai": {
+      "options": {
+        "timeout": 300000,              // Request timeout in milliseconds (default: 300000)
+        "setCacheKey": false            // Ensure cache key is always set (default: false)
+      }
+    },*/
+    /*"amazon-bedrock": {
+      "options": {
+        "region": "us-east-1",          // AWS region (default: AWS_REGION env var or us-east-1)
+        "profile": null,                // AWS profile (default: AWS_PROFILE env var)
+        "endpoint": null,               // Custom endpoint URL (default: null)
+        "timeout": 300000              // Request timeout in milliseconds (default: 300000)
+      }
+    }*/
+  } // end provider
+}
+
+// vim: ts=2 sts=2 sw=2 et
