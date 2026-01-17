@@ -2,7 +2,7 @@
   "$schema": "https://opencode.ai/config",
   "autoupdate": true,
   //"model": null,                       // Primary AI model to use (default: null)
-  //"small_model": null,                 // Secondary model for lightweight tasks (default: null),
+  //"small_model": null,                // Secondary model for lightweight tasks (default: null),
   "tui": {
     "scroll_acceleration": {
       "enabled": false
@@ -10,6 +10,7 @@
     "scroll_speed": 1,
     "diff_style": "auto"
   }, // end tui
+  "instructions": ["~/.config/opencode/AGENTS.md"]
 
   /*
   // Server configuration for opencode serve and opencode web commands
