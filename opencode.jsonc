@@ -10,7 +10,7 @@
     "scroll_speed": 1,
     "diff_style": "auto"
   }, // end tui
-  "instructions": ["~/.config/opencode/AGENTS.md"]
+  "instructions": ["~/.config/opencode/AGENTS.md"],
 
   /*
   // Server configuration for opencode serve and opencode web commands
